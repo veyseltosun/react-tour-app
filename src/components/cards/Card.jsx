@@ -13,7 +13,7 @@ function Card() {
         return(
           <div className='cards' key={id}>
             <div className='title'>
-              <h2 className=''>{title}</h2>
+              <h2>{title}</h2>
             </div>
             <img src={image} alt={title}/>
             
