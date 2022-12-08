@@ -15,3 +15,7 @@
     font-family: 'Amatic SC', cursive;
 
 }
+.navbar a:hover{
+    background-color: #ace0f9;
+    color:black
+}
