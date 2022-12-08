@@ -17,6 +17,8 @@
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     margin: 1rem;
     position: relative;
+    overflow: hidden;
+
 
 }
 
@@ -40,3 +42,22 @@
     filter:grayscale(100%);
 }
 
+.card-over {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.7s ease-in-out;
+
+}
+
+.cards:hover .card-over {
+    transform: translateY(0%);
+    transition: transform 0.7s ease-in-out;
+
+
+}
