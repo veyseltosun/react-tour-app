@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className='big-title'>
+
+      <h3>POPULER TOUR PLACES</h3>
+
+
+    </div>
   )
 }
 
-export default Header
+export default Header;
