@@ -7,21 +7,24 @@ import "./Card.css";
 function Card() {
   return (
     <div className='card-container'>
-      <div className='cards'>
-        <div className='title'>
 
-          <h2>{data[0].title}</h2>
+      {data.map((card)=>{
+        const{id, desc, title, image} = card
+        return(
+          <div className='cards' key={id}>
+            <div className='title'>
+              <h2 className=''>{title}</h2>
+            </div>
+            <img src={image} alt={title}/>
+            
+            <div className="card-over">
+              <p>{desc}</p>
+            </div>
 
-        </div>
-
-        <img src={data[0].image} alt={data[0].title} />
-        
-        <div className='card-over'>
-          <p>{data[0].desc}</p>
-        </div>
-
-
-      </div>
+          </div>
+        )
+      })}
+      
 
     </div>
   )
